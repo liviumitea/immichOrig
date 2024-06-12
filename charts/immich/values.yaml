@@ -97,11 +97,11 @@ machine-learning:
   env:
     TRANSFORMERS_CACHE: /cache
   persistence:
-    claimName: immich-ml-pvc
-    # cache:
-    #   enabled: true
-    #   size: 10Gi
-    #   # Optional: Set this to pvc to avoid downloading the ML models every start.
-    #   type: emptyDir
-    #   accessMode: ReadWriteMany
-    #   storageClass: longhorn
+    # claimName: immich-ml-pvc
+    cache:
+      enabled: true
+      size: 10Gi
+      # Optional: Set this to pvc to avoid downloading the ML models every start.
+      type: emptyDir
+      accessMode: ReadWriteMany
+      storageClass: longhorn
