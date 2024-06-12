@@ -45,3 +45,4 @@ helm delete --namespace immich immich
 ```
 
 The command removes all the Kubernetes components associated with the chart and deletes the release.
+# immichOrig
