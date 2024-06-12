@@ -51,10 +51,10 @@ postgresql:
         database: immich
         password: immich
   primary:
-    persistence:
-      enabled: true
-      existingClaim: immich-postgres-pvc
-      storageClass: longhorn
+    # persistence:
+    #   enabled: true
+    #   existingClaim: immich-postgres-pvc
+    #   storageClass: longhorn
     initdb:
       scripts:
         create-extensions.sql: |
@@ -104,4 +104,4 @@ machine-learning:
       # Optional: Set this to pvc to avoid downloading the ML models every start.
       type: emptyDir
       accessMode: ReadWriteMany
-      #storageClass: longhorn
+      storageClass: longhorn
