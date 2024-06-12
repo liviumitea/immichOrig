@@ -53,7 +53,7 @@ postgresql:
   primary:
     persistence:
       enabled: true
-      existingClaim: immich-postgresnew-pvc
+      existingClaim: immich-postgres-pvc
       storageClass: longhorn
     initdb:
       scripts:
