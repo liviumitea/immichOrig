@@ -25,7 +25,7 @@ probes:
       initialDelaySeconds: 0
       periodSeconds: 10
       timeoutSeconds: 1
-      failureThreshold: 3
+      failureThreshold: 300
   readiness: *probes
   startup:
     enabled: false
