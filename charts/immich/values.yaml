@@ -51,10 +51,10 @@ postgresql:
         database: immich
         password: immich
   primary:
-    # persistence:
-    #   enabled: true
-    #   existingClaim: immich-postgres-pvc
-    #   storageClass: longhorn
+    persistence:
+      enabled: true
+      existingClaim: immich-postgresnew-pvc
+      storageClass: longhorn
     initdb:
       scripts:
         create-extensions.sql: |
